@@ -113,4 +113,3 @@ function createList(index, nome, anime, descricao) {
 
   ulListProducts.appendChild(itemList);
 }
-createList();
