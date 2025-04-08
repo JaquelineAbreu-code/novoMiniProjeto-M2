@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  /* Título */
+  h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+  
+    /* Gradiente no texto */
+    background: linear-gradient(90deg, #ff416c, #ff4b2b, #ffde59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    /* Efeitos visuais */
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    animation: pulse 3s infinite;
+  }
+  
+  /* Animação suave */
+  @keyframes pulse {
+    0% { letter-spacing: 2px; }
+    50% { letter-spacing: 4px; }
+    100% { letter-spacing: 2px; }
+  }
+  
+  
+  
+  /* Formulário de cadastro */
+  form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+.btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Botões gerais */
+  button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  /* Botões com cores diferentes */
+  #btn-save { background-color: #28a745; }      /* Verde */
+  #btn-save:hover { background-color: #218838; }
+  
+  #btn-list { background-color: #007bff; }      /* Azul */
+  #btn-list:hover { background-color: #0069d9; }
+
+  #productList{
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      
+      .lista-responsiva li {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 6px;
+        font-size: 16px;
+        flex: 1 1 40%;
+        text-align: center;
+        transition: background 0.3s;
+      }
+      
+      .lista-responsiva li:hover {
+        background-color: #0056b3;
+      }
+      
+      /* Esconder lista inicialmente */
+      .escondida {
+        display: none;
+      }
+      
+      /* Responsivo para celular */
+      @media (max-width: 500px) {
+        .lista-responsiva li {
+          flex: 1 1 100%;
+        }
+      }
+      
+  

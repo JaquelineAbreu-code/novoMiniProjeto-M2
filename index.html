@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniprojeto-M2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{padding: 20px;}
+        input{margin: 5px;}
+        button{margin: 5px;}
+
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastre Seu Personagem Favorito </h1>
+<form id="formCadastro">
+    <input type="text" name="nome" id="input-nome" placeholder="Adicione o nome do personagem">
+    <input type="text" name="anime" id="input-anime" placeholder="Nome do Anime">
+    <input type="text" name="descricao" id="input-descricao" placeholder="Descreva o Personagem">
+
+  <div class="btns">
+    <button id="btn-save">Salvar</button>
+    <button id="btn-list">Listar</button>
+  </div>
+</form>
+        <ul class="ulList" id="product-list">
+
+        </ul>
+    <script src="script.js"></script>
+</body>
+</html>
